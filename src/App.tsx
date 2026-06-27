@@ -10,7 +10,6 @@ import {
   Phone, 
   Mail, 
   MapPin, 
-  Award, 
   Shield, 
   Star, 
   Send, 
@@ -400,21 +399,13 @@ function App() {
         <div className="features-grid">
           <div className="feature-item" id="diff-1">
             <div className="feature-icon-box">
-              <Award size={24} />
-            </div>
-            <h4>Qualificação Certificada</h4>
-            <p>Formado nas normas vigentes (NR10) para realizar instalações seguras e padronizadas.</p>
-          </div>
-
-          <div className="feature-item" id="diff-2">
-            <div className="feature-icon-box">
               <Shield size={24} />
             </div>
             <h4>Materiais de Ponta</h4>
             <p>Utilização exclusiva de fios, conectores e marcas líderes de mercado para máxima durabilidade.</p>
           </div>
 
-          <div className="feature-item" id="diff-3">
+          <div className="feature-item" id="diff-2">
             <div className="feature-icon-box">
               <Clock size={24} />
             </div>
@@ -422,7 +413,7 @@ function App() {
             <p>Respeito rigoroso aos prazos combinados e entrega do ambiente limpo após o serviço.</p>
           </div>
 
-          <div className="feature-item" id="diff-4">
+          <div className="feature-item" id="diff-3">
             <div className="feature-icon-box">
               <Lock size={24} />
             </div>
