@@ -27,7 +27,6 @@ import portfolioElectrical from './assets/portfolio_electrical.png';
 import portfolioNetworking from './assets/portfolio_networking.png';
 import portfolioAutomation from './assets/portfolio_automation.png';
 import logoImg from './assets/logo_icon_hires.png';
-import heroImg from './assets/hero.png';
 
 
 
@@ -298,7 +297,6 @@ function App() {
             className="service-card glass gold" 
             id="service-card-electric"
             onMouseEnter={() => setActiveHoverType('electric')}
-            onMouseLeave={() => setActiveHoverType(null)}
             onMouseMove={handleCardTilt}
             onMouseLeave={e => {
               setActiveHoverType(null);
@@ -330,7 +328,6 @@ function App() {
             className="service-card glass cyan" 
             id="service-card-network"
             onMouseEnter={() => setActiveHoverType('network')}
-            onMouseLeave={() => setActiveHoverType(null)}
             onMouseMove={handleCardTilt}
             onMouseLeave={e => {
               setActiveHoverType(null);
@@ -362,7 +359,6 @@ function App() {
             className="service-card glass violet" 
             id="service-card-automation"
             onMouseEnter={() => setActiveHoverType('automation')}
-            onMouseLeave={() => setActiveHoverType(null)}
             onMouseMove={handleCardTilt}
             onMouseLeave={e => {
               setActiveHoverType(null);
