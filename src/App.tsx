@@ -577,8 +577,8 @@ function App() {
               <div className="contact-details">
                 <h4>E-mail Profissional</h4>
                 <p>Para envio de plantas ou solicitações formais</p>
-                <a href="mailto:contato@gteletro.com" className="text-gradient-gold">
-                  contato@gteletro.com
+                <a href="mailto:eletricidade.gt@gmail.com" className="text-gradient-gold">
+                  eletricidade.gt@gmail.com
                 </a>
               </div>
             </div>
