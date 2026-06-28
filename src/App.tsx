@@ -74,6 +74,14 @@ function App() {
     message: ''
   });
 
+  // Force scroll to top on page load/refresh
+  useEffect(() => {
+    if ('scrollRestoration' in window.history) {
+      window.history.scrollRestoration = 'manual';
+    }
+    window.scrollTo(0, 0);
+  }, []);
+
   // Track page scroll for sticky header
   useEffect(() => {
     const handleScroll = () => {
