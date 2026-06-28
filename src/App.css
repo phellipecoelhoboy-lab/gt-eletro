@@ -1282,6 +1282,92 @@ footer {
   line-height: 1.6;
 }
 
+.footer-socials {
+  display: flex;
+  gap: 12px;
+  margin-top: 20px;
+}
+
+.social-btn {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--text-secondary);
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+
+.social-btn::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  z-index: 1;
+}
+
+.social-btn svg {
+  position: relative;
+  z-index: 2;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.social-btn:hover {
+  border-color: transparent;
+  transform: translateY(-3px);
+}
+
+.social-btn:hover::before {
+  opacity: 1;
+}
+
+.social-btn:hover svg {
+  transform: scale(1.1);
+}
+
+.social-btn.instagram:hover {
+  box-shadow: 0 5px 15px rgba(225, 48, 108, 0.35);
+}
+
+.social-btn.instagram::before {
+  background: linear-gradient(135deg, #405de6 0%, #5851db 25%, #833ab4 50%, #c13584 75%, #e1306c 100%);
+}
+
+.social-btn.instagram:hover svg {
+  color: #fff;
+}
+
+.social-btn.whatsapp:hover {
+  box-shadow: 0 5px 15px rgba(37, 211, 102, 0.35);
+}
+
+.social-btn.whatsapp::before {
+  background: linear-gradient(135deg, #25d366 0%, #128c7e 100%);
+}
+
+.social-btn.whatsapp:hover svg {
+  color: #fff;
+}
+
+.social-btn.email:hover {
+  box-shadow: 0 5px 15px rgba(245, 158, 11, 0.35);
+}
+
+.social-btn.email::before {
+  background: linear-gradient(135deg, var(--neon-gold) 0%, #d97706 100%);
+}
+
+.social-btn.email:hover svg {
+  color: #000;
+}
+
 .footer-links-col h4 {
   font-size: 1.05rem;
   margin-bottom: 20px;

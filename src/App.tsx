@@ -11,6 +11,7 @@ import {
   Mail, 
   MapPin, 
   Shield, 
+  ShieldCheck, 
   Star, 
   Send, 
   Sparkles, 
@@ -407,13 +408,21 @@ function App() {
 
           <div className="feature-item" id="diff-2">
             <div className="feature-icon-box">
+              <ShieldCheck size={24} />
+            </div>
+            <h4>Padrão NBR 5410</h4>
+            <p>Instalações executadas rigorosamente de acordo com as normas de segurança brasileiras para proteger seu patrimônio.</p>
+          </div>
+
+          <div className="feature-item" id="diff-3">
+            <div className="feature-icon-box">
               <Clock size={24} />
             </div>
             <h4>Pontualidade & Limpeza</h4>
             <p>Respeito rigoroso aos prazos combinados e entrega do ambiente limpo após o serviço.</p>
           </div>
 
-          <div className="feature-item" id="diff-3">
+          <div className="feature-item" id="diff-4">
             <div className="feature-icon-box">
               <Lock size={24} />
             </div>
@@ -693,6 +702,50 @@ function App() {
             <p>
               Instalações elétricas profissionais, automação inteligente e cabeamento de redes estruturadas para modernizar seu dia a dia.
             </p>
+            <div className="footer-socials">
+              <a 
+                href="https://www.instagram.com/gteletricidad?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="social-btn instagram"
+                aria-label="Instagram"
+                id="footer-instagram-btn"
+              >
+                <svg 
+                  xmlns="http://www.w3.org/2000/svg" 
+                  width="20" 
+                  height="20" 
+                  viewBox="0 0 24 24" 
+                  fill="none" 
+                  stroke="currentColor" 
+                  strokeWidth="2" 
+                  strokeLinecap="round" 
+                  strokeLinejoin="round" 
+                >
+                  <rect width="20" height="20" x="2" y="2" rx="5" ry="5" />
+                  <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+                  <line x1="17.5" x2="17.51" y1="6.5" y2="6.5" />
+                </svg>
+              </a>
+              <a 
+                href={`https://wa.me/${WHATSAPP_NUMBER}`} 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="social-btn whatsapp"
+                aria-label="WhatsApp"
+                id="footer-whatsapp-btn"
+              >
+                <Phone size={20} />
+              </a>
+              <a 
+                href="mailto:eletricidade.gt@gmail.com" 
+                className="social-btn email"
+                aria-label="E-mail"
+                id="footer-email-btn"
+              >
+                <Mail size={20} />
+              </a>
+            </div>
           </div>
 
           <div className="footer-links-col">
