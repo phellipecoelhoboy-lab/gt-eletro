@@ -3,6 +3,7 @@ import {
   Zap, 
   Wifi, 
   Home, 
+  Cpu,
   CheckCircle2, 
   ChevronRight, 
   Menu, 
@@ -11,7 +12,6 @@ import {
   Mail, 
   MapPin, 
   Shield, 
-  ShieldCheck, 
   Star, 
   Send, 
   Sparkles, 
@@ -416,10 +416,10 @@ function App() {
 
           <div className="feature-item" id="diff-2">
             <div className="feature-icon-box">
-              <ShieldCheck size={24} />
+              <Cpu size={24} />
             </div>
-            <h4>Padrão NBR 5410</h4>
-            <p>Instalações executadas rigorosamente de acordo com as normas de segurança brasileiras para proteger seu patrimônio.</p>
+            <h4>Infraestrutura Smart-Ready</h4>
+            <p>Infraestrutura e projetos planejados desde o início para facilitar futuras expansões e integrações de automação.</p>
           </div>
 
           <div className="feature-item" id="diff-3">
