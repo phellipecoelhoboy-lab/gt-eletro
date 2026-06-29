@@ -265,7 +265,7 @@ function App() {
               onMouseLeave={() => setActiveHoverType(null)}
             >
               <span className="badge-dot dot-gold"></span>
-              <span>🔌 Elétrica Segura (NR10)</span>
+              <span>🔌 Elétrica Segura</span>
             </div>
             <div 
               className="floating-badge badge-2" 
